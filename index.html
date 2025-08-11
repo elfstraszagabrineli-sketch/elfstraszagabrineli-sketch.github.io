@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Paws Dog Sitting & Walking</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <script>
+    // Visitor IP tracking
+    fetch('https://ipapi.co/json')
+      .then(response => response.json())
+      .then(data => {
+        console.log('Visitor IP Info:', data);
+      });
+  </script>
+</head>
+<body>
+
+<nav class="container-fluid">
+  <ul>
+    <li><strong>Happy Paws</strong></li>
+  </ul>
+  <ul>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#contact" role="button">Contact</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+  <div class="grid">
+    <section>
+      <hgroup>
+        <h2>Professional Dog Sitting & Walking</h2>
+        <h3>Reliable care for your best friend</h3>
+      </hgroup>
+      <p>At Happy Paws, we provide safe, fun, and personalized care for your furry family members. Whether you need daily walks or vacation sitting, we've got tails wagging all over town!</p>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1601758175070-6ec2fef8b04e" alt="Dog being walked in a park" />
+        <figcaption><a href="https://unsplash.com/photos/WNoLnJo7tS8" target="_blank">Image by Unsplash</a></figcaption>
+      </figure>
+
+      <h3 id="services">Our Services</h3>
+      <p>
+        <strong>Dog Walking:</strong> 30 to 60-minute walks tailored to your dog's pace and energy.<br>
+        <strong>Dog Sitting:</strong> In-home sitting to keep your dog comfortable in familiar surroundings.
+      </p>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" alt="Dog sitting comfortably indoors" />
+        <figcaption><a href="https://unsplash.com/photos/6R8M8Y_3hK4" target="_blank">Image by Unsplash</a></figcaption>
+      </figure>
+
+      <h3 id="pricing">Pricing</h3>
+      <p>
+        <ul>
+          <li>Dog Walking (30 min): $20</li>
+          <li>Dog Walking (60 min): $30</li>
+          <li>Dog Sitting (Half Day): $40</li>
+          <li>Dog Sitting (Full Day): $70</li>
+          <li>Overnight Sitting: $90</li>
+        </ul>
+      </p>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16" alt="Group of dogs playing outdoors" />
+        <figcaption><a href="https://unsplash.com/photos/3cAMUE3bqMY" target="_blank">Image by Unsplash</a></figcaption>
+      </figure>
+
+      <h3>Message Us Directly</h3>
+      <p>
+        <a href="https://wa.me/34652246574" target="_blank" role="button">Chat on WhatsApp</a>
+        <a href="https://t.me/happyestepona" target="_blank" role="button">Message on Telegram</a>
+      </p>
+
+    </section>
+  </div>
+</main>
+
+<section aria-label="Subscribe example">
+  <div class="container">
+    <article>
+      <hgroup>
+        <h2 id="contact">Get in Touch</h2>
+        <h3>Contact us to book a walk or sitting session</h3>
+      </hgroup>
+      <form class="grid" action="https://formspree.io/f/yourformid" method="POST">
+        <input type="text" id="firstname" name="firstname" placeholder="Your name" aria-label="First name" required />
+        <input type="email" id="email" name="email" placeholder="Your email" aria-label="Email" required />
+        <textarea name="message" placeholder="Your message" required></textarea>
+        <button type="submit">Send Request</button>
+      </form>
+      <p><small>We'll respond to your message shortly via email.</small></p>
+    </article>
+  </div>
+</section>
+
+<footer class="container">
+  <small>
+    <a href="#">Terms of Service</a> • <a href="#">Privacy Policy</a>
+  </small>
+</footer>
+
+</body>
+</html>
